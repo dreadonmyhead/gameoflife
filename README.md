@@ -10,7 +10,7 @@ Download Selenum standalone server jar https://www.selenium.dev/downloads/
 Clone project or download zip. Open it in any IDE. 
 Setup project SDK, in IntelliJ File -> Project Structure -> Project -> Project SDK -> select your Java SDK.
 Add selenium jar to the libraries File -> Project Structure -> Libraries -> Click plus -> Java -> select selenium jar path
-Add JUnit jar from Maven File -> Project Structure -> Libraries -> Click plus -> Maven -> search for "Junit" and select junit 4.0
+Add JUnit jar from Maven File -> Project Structure -> Libraries -> Click plus -> Maven -> search for "Junit" and select junit 4.12
 Put browser driver exe file to the path. In example chrome driver is used. Use exactly the same naming of exe and your property name.
 
 # Run
