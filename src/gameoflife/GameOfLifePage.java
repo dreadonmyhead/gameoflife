@@ -12,13 +12,13 @@ public class GameOfLifePage {
     private final WebDriver driver;
 
     public GameOfLifePage(WebDriver driver) {
-        File file = new File("/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+        File file = new File("/chromedriver.exe"); //Path to driver
+        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath()); //Driver name
         this.driver = driver;
     }
 
     public void goToPage() {
-        driver.get("http://127.0.0.1:9090/");
+        driver.get(""); //Insert URL
     }
 
     public void clickNewGame() {
