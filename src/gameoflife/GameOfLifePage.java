@@ -51,9 +51,13 @@ public class GameOfLifePage {
         Assert.assertEquals("on", cell.getAttribute("value"));
     }
 
-    public boolean isCellAlive(int r, int c) {
-        WebElement cell = driver.findElement(By.cssSelector("input[name='cell_" + r + "_" + c + "']"));
-        return "on".equals(cell.getAttribute("value"));
+    public boolean isCellAlive(int r, int c) throws NoSuchElementException {
+        try {
+            WebElement cell = driver.findElement(By.cssSelector("input[name='cell_" + r + "_" + c + "']"));
+            return "on".equals(cell.getAttribute("value"));
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 
     public void checkIntroText(String text) {
