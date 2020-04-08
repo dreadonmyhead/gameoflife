@@ -13,7 +13,7 @@ public class GameOfLifePage {
 
     public GameOfLifePage(WebDriver driver) {
         File file = new File("/chromedriver.exe"); //Path to driver
-        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath()); //Driver name
+        System.setProperty("webdriver.chromedriver.driver", file.getAbsolutePath()); //Driver name
         this.driver = driver;
     }
 
